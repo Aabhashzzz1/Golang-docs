@@ -1,0 +1,27 @@
+Go Basics - Types, Variables
+Control Flow
+
+Pointers
+Deeper into Go (String,Slicing,Shuffing,HardDrive,Receiver,Random)
+Functions 
+Interfaces - I
+Interfaces - II
+
+Data Structures - Array
+Data Structures - Slices
+Data Structures - Map 
+Data Structures - Strut: JSON
+Organizing Data with Struts
+Map vs Struts
+Structs in Go 
+
+Working with Files in Go 
+Error Handling
+Channels and Go Routines
+
+Concurrency
+Integration with Rest API 
+Integration with ELastic Search 
+Integration with Database 
+
+Go Packages and Modules 
