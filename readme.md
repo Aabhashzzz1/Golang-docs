@@ -307,3 +307,19 @@ a is of type int
 b is of type int
 c is of type string
 ```
+>>
+>> ### The lvalues and the rvalues
+>>> `There are two kind of expression in Go-`
+>>>
+| Sr. No. | Expression |
+| :----:  | :----   |
+| 1 | **lvalue** - `Expressions that refer to a memory location is called` "lvalue" `expression. An lvalue may appear as either the left-hand or right-hand side of an assignment.` |
+| 2 | **rvalue** - `The term rvalue refers to a data value that is stored at some address in memory. An rvalue is an expression that cannot have a value assigned to it which means an rvalue may appear on the right, but not left-hand side of an assignment` |
+>>> `The following statement is valid-`
+```
+x = 20.0
+```
+>>> `The following statement is not valid. It would generate compile-time error-`
+```
+10 = 20
+```
