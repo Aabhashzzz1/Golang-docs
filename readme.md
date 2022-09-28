@@ -1,3 +1,49 @@
+### Table of Contents
+1. [Introduction to Golang](https://github.com/Aabhashzzz1/Golang-docs#golang)
+2. [Go - Features](https://github.com/Aabhashzzz1/Golang-docs#features)
+3. [Go - Extension](https://github.com/Aabhashzzz1/Golang-docs#go-program-extension)
+4. [Go - Program Structure](https://github.com/Aabhashzzz1/Golang-docs#program-structure)
+5. [Go - Executing](https://github.com/Aabhashzzz1/Golang-docs#executing-a-program)
+6. [Go - Basic Syntax](https://github.com/Aabhashzzz1/Golang-docs#basic-syntax)    
+    * [Token](https://github.com/Aabhashzzz1/Golang-docs#tokens)
+    * [Line Separator](https://github.com/Aabhashzzz1/Golang-docs#line-separator)
+    * [Comments](https://github.com/Aabhashzzz1/Golang-docs#comments)
+    * [Identifier](https://github.com/Aabhashzzz1/Golang-docs#identifiers)
+    * [keywords](https://github.com/Aabhashzzz1/Golang-docs#keywords)
+    * [Whitespace](https://github.com/Aabhashzzz1/Golang-docs#whitespace)
+7. [Go - Data Types](https://github.com/Aabhashzzz1/Golang-docs#data-types)
+    * [Integer Datatypes](https://github.com/Aabhashzzz1/Golang-docs#integer-types)
+    * [Floating Datatypes](https://github.com/Aabhashzzz1/Golang-docs#floating-types)
+    * [Other Numeric Datatypes](https://github.com/Aabhashzzz1/Golang-docs#other-numberic-types)
+8. [Go - Variables](https://github.com/Aabhashzzz1/Golang-docs#variables)
+    * [Variable defination](https://github.com/Aabhashzzz1/Golang-docs#variable-defination)
+    * [Static type declaration](https://github.com/Aabhashzzz1/Golang-docs#static-type-declaration)
+    * [Dynamic type declaration (type interfence)](https://github.com/Aabhashzzz1/Golang-docs#dynamic-type-declaration-type-interfence)
+    * [Mixed Variable declaration](https://github.com/Aabhashzzz1/Golang-docs#mixed-variable-declaration)
+    * [The lvalue and the rvalue](https://github.com/Aabhashzzz1/Golang-docs#the-lvalues-and-the-rvalues)
+9. [Go - Constants](https://github.com/Aabhashzzz1/Golang-docs#constants)
+    * [Integer literals](https://github.com/Aabhashzzz1/Golang-docs#integer-literals)
+    * [Floating-point literals](https://github.com/Aabhashzzz1/Golang-docs#floating-point-literals)
+    * [Escape Sequence](https://github.com/Aabhashzzz1/Golang-docs#escape-sequence)
+    * [String literals](https://github.com/Aabhashzzz1/Golang-docs#string-literals)
+    * [The const keyword](https://github.com/Aabhashzzz1/Golang-docs#the-const-keyword)
+10. [Go - Operators](https://github.com/Aabhashzzz1/Golang-docs#operators)
+    * [Assignment Operator](https://github.com/Aabhashzzz1/Golang-docs#assignment-operators)
+    * [Miscellaneous Operator](https://github.com/Aabhashzzz1/Golang-docs#miscellaneous-operators)
+    * [Operator Procedence](https://github.com/Aabhashzzz1/Golang-docs#operators-precedence)
+11. [Decision Making](https://github.com/Aabhashzzz1/Golang-docs#decision-making)
+12. [Loops](https://github.com/Aabhashzzz1/Golang-docs#loops)
+    * [Loop Control Statement](https://github.com/Aabhashzzz1/Golang-docs#loop-control-statements)
+    * [The Infinite Loop](https://github.com/Aabhashzzz1/Golang-docs#the-infinite-loop)
+13. [Functions](https://github.com/Aabhashzzz1/Golang-docs#functions)
+    * [Defining](https://github.com/Aabhashzzz1/Golang-docs#defining)
+
+<br />
+
+***
+
+<br />
+
 # GoLang
 
 > Go language is a programming language initially developed at Google in the year 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a statically-typed language having syntax similar to that of C. It provides garbage collection, type safety, dynamic-typing capability, many advanced built-in types such as variable length arrays and key-value maps. It also provides a rich standard library. The Go programming language was launched in November 2009 and is used in some of the Google's production systems.
