@@ -31,11 +31,11 @@
     * [Assignment Operator](https://github.com/Aabhashzzz1/Golang-docs#assignment-operators)
     * [Miscellaneous Operator](https://github.com/Aabhashzzz1/Golang-docs#miscellaneous-operators)
     * [Operator Procedence](https://github.com/Aabhashzzz1/Golang-docs#operators-precedence)
-11. [Decision Making](https://github.com/Aabhashzzz1/Golang-docs#decision-making)
-12. [Loops](https://github.com/Aabhashzzz1/Golang-docs#loops)
+11. [Go - Decision Making](https://github.com/Aabhashzzz1/Golang-docs#decision-making)
+12. [Go - Loops](https://github.com/Aabhashzzz1/Golang-docs#loops)
     * [Loop Control Statement](https://github.com/Aabhashzzz1/Golang-docs#loop-control-statements)
     * [The Infinite Loop](https://github.com/Aabhashzzz1/Golang-docs#the-infinite-loop)
-13. [Functions](https://github.com/Aabhashzzz1/Golang-docs#functions)
+13. [Go - Functions](https://github.com/Aabhashzzz1/Golang-docs#functions)
     * [Defining](https://github.com/Aabhashzzz1/Golang-docs#defining)
 
 <br />
