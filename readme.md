@@ -59,13 +59,13 @@ func main() {
 >> * Notice: The capital P of Println method. In Go language, a name is exported if it starts with capital letter. Exported means the function or variable/constant is accessible to the importer of the respective package.
 
 ## Executing a program
-> `Let us discuss how to save the source code in a file, compile it and finally execute the program. Please follow the steps given below-`
->> * `Open a text editor and add the above-mentioned code.`
->> * `Save the file as hello.go`
->> * `Open the command prompt.`
->> * `Go to the directory where you saved the file.`
->> * `Type go run hello.go and press enter to run your code.`
->> * `If there are no errors in your code, then you will see "Hello, World!" printed on the screen.`
+> Let us discuss how to save the source code in a file, compile it and finally execute the program. Please follow the steps given below-
+>> * Open a text editor and add the above-mentioned code.
+>> * Save the file as hello.go
+>> * Open the command prompt.
+>> * Go to the directory where you saved the file.
+>> * Type go run hello.go and press enter to run your code.
+>> * If there are no errors in your code, then you will see "Hello, World!" printed on the screen.
 
 ```go
 $ go run hello.go
@@ -73,13 +73,13 @@ Hello, World!
 ```
 
 ## Basic Syntax
-> `We discussed the basic syntax of a Go program. Now it will be easy to understand the other basic building blocks of the Go programming language`
+> We discussed the basic syntax of a Go program. Now it will be easy to understand the other basic building blocks of the Go programming language
 >> ### Tokens
->>> `A Go program consists of various tokens. A token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Go statement consits of six tokens-`
+>>> A Go program consists of various tokens. A token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Go statement consits of six tokens-
 ```go
 fmt.Println("Hello, World!")
 ```
->>> `The individual tokens are-`
+>>> The individual tokens are-
 ```go
 fmt
 
@@ -90,37 +90,37 @@ Println
 ```
 >
 >> ### Line Separator
->>> `In a Go program, the line separator key is a statement terminator. That is, individual statement don't need a special seprator like ";" in C. The Go compiler internally places ";" as the statment terminator to indicates the end of the one logical entity`
+>>> In a Go program, the line separator key is a statement terminator. That is, individual statement don't need a special seprator like ";" in C. The Go compiler internally places ";" as the statment terminator to indicates the end of the one logical entity
 >>>
->>> `For example, take a look at the following statements-`
+>>> For example, take a look at the following statements-
 ```go
 fmt.Println("Hello, world!")
 fmt.Println("I am in Go Programming World!")
 ```
 >
 >> ### Comments
->>> `Comments are like helping texts in your Go program and they are ignored by the compiler. They start with /* as shown below-`
+>>> Comments are like helping texts in your Go program and they are ignored by the compiler. They start with /* as shown below-
 ```go
 /* my first program in Go */
 ```
 >
 >> ### Identifiers
->>> `A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0-9)`
+>>> A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores, and digits (0-9)
 > 
 > **`identifier = letter { letter | unicode_digit }`**
->>> `Go does not allow punctuation characters such as @, $, and % within identifiers. Go is a case-sentitive programming language. Thus, Manpower and manpower are two different identifers in Go. Here are some examples of acceptance identifiers-`
->>>> * `aabhash`
->>>> * `malviya`
->>>> * `abc`
->>>> * `move_name`
->>>> * `a_123`
->>>> * `myname15`
->>>> * `_temp`
->>>> * `a`
->>>> * `a10S`
+>>> Go does not allow punctuation characters such as @, $, and % within identifiers. Go is a case-sentitive programming language. Thus, Manpower and manpower are two different identifers in Go. Here are some examples of acceptance identifiers-
+>>>> * aabhash
+>>>> * malviya
+>>>> * abc
+>>>> * move_name
+>>>> * a_123
+>>>> * myname15
+>>>> * _temp
+>>>> * a
+>>>> * a10S
 >
 >> ### Keywords
->>> `The following list shows the reserved words in Go. These reserved words may not be used as constant or variable or any other identifier names`
+>>> The following list shows the reserved words in Go. These reserved words may not be used as constant or variable or any other identifier names
 ```go
 break       default         func        interface       select
 case        defer           go          map             struct
@@ -130,22 +130,22 @@ continue    for             import      return          var
 ```
 >
 >> ### Whitespace
->>> `Whitespace is the term used in Go to describe blanks, tabs, newline characters and comments. A line containing only whitespace, possibly with a comment, is known as a blank line and a Go compiler totally ignore it.`
+>>> Whitespace is the term used in Go to describe blanks, tabs, newline characters and comments. A line containing only whitespace, possibly with a comment, is known as a blank line and a Go compiler totally ignore it.
 >>> 
->>> `Whitespaces separate one part of a statement from another and enables ths compiler to identify where one element on a statment, such as int, end, and the next element begins. Therefore, in the following statement-`
+>>> Whitespaces separate one part of a statement from another and enables ths compiler to identify where one element on a statment, such as int, end, and the next element begins. Therefore, in the following statement-
 ```go
 var age int;
 ```
->>> `There must be at least one whitespace character (ususally a space) between int and age for the compiler to be able to distinguish them. On the other hand, in the following statement-`
+>>> There must be at least one whitespace character (ususally a space) between int and age for the compiler to be able to distinguish them. On the other hand, in the following statement-
 ```go
 fruit = apples + oranges;       // get the total fruit
 ```
->>> `No whitespace character are necessary between fruit and = or between = and apples, althrough you are free to include some if you wish for readability purpose`
+>>> No whitespace character are necessary between fruit and = or between = and apples, althrough you are free to include some if you wish for readability purpose
 
 ## Data Types
-> `In Go Programming language, data types refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted`
+> In Go Programming language, data types refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted
 >
-> `The types in Go can be classified as follows-`
+> The types in Go can be classified as follows-
 > 
 | Sr. No. | Types and Description |
 | :-----: | :---- |
@@ -153,10 +153,10 @@ fruit = apples + oranges;       // get the total fruit
 |   2   | **Numeric types** - They are again arithmetic type and they represents (a) **_integer types_** (b) **_floating point value_** through program   |
 |   3   | **String types** - A string type represent the set of string values. Its value is a sequence of bytes. Strings are immutable types that is once created, it is not possible to change the contents of a string. The predeclared string type is string   |
 |   4   | **Derived types** - They include (a) **_pointer types_** (b) **_array types_** (c) **_structure types_** (d) **_union types_** (e) **_function types_** (f) **_slice types_** (g) **_interface types_** (h) **_map types_** (i) **_channel types_**
-> `Array types and structure types are collectively refers to as` **aggregate types.** `The type of a function specifies the set of all function with the same perameter and result types. We will discuss the basic type in the following section`
+> Array types and structure types are collectively refers to as **aggregate types.** The type of a function specifies the set of all function with the same perameter and result types. We will discuss the basic type in the following section
 > 
 >> ### Integer types
->>> `The predefined architecture-independent interger types are-`
+>>> The predefined architecture-independent interger types are-
 >>>
 | Sr. No. | Types and Description |
 | :-----: | :---- |
@@ -170,7 +170,7 @@ fruit = apples + oranges;       // get the total fruit
 | 8 | **int64** - `Signed 64-bit integers (-9223372036854775808 to 9223372036854775807)` |
 >
 >> ### Floating types
->>> `The predefined architecture-independent float types are-`
+>>> The predefined architecture-independent float types are-
 >>>
 | Sr. No. | Types and Description |
 | :-----: | :---- |
@@ -182,7 +182,7 @@ fruit = apples + oranges;       // get the total fruit
 >
 
 >> ### Other Numberic types
->>> `There is also a set of numberic types with implementation-specific sizes-`
+>>> There is also a set of numberic types with implementation-specific sizes-
 >>>
 | Sr. No. | Types and Description |
 | :-----: | :---- |
@@ -193,24 +193,24 @@ fruit = apples + oranges;       // get the total fruit
 | 5 | **uintpr** - `an unsigned integer to store the uninterpreted bits of a pointer value` |
 
 ## Variables
-> `A variable is nothing but a name given to a storage area that the programs can manipulate. Each variable in Go has specific type, which determines the size and layout of the variable's memory, the range of valus that can be stored within that memory, and the set of operations that can be applied to the variable.`
+> A variable is nothing but a name given to a storage area that the programs can manipulate. Each variable in Go has specific type, which determines the size and layout of the variable's memory, the range of valus that can be stored within that memory, and the set of operations that can be applied to the variable.
 >
-> `The name of a variable can be composed of letters, digits and the undescore character. It must begin with either a letter or an underscore, Upper and lowercase letters are distinct because Go is case-sensitive.`
+> The name of a variable can be composed of letters, digits and the undescore character. It must begin with either a letter or an underscore, Upper and lowercase letters are distinct because Go is case-sensitive.
 >
 | Sr. No. | Types and Description |
 | :-----: | :---- |
 | 1 | **byte** - `Typically a single octet (one byte). The is an byte type.` |
 | 2 | **int** - `The most natural size of integer for the machine.` |
 | 3 | **float32** - `A single-precision floating point value` |
-> `Go programming language also allows to define various other types of variables such as Enumeration, Pointers, Array, Structure, and Union`
+> Go programming language also allows to define various other types of variables such as Enumeration, Pointers, Array, Structure, and Union
 >
 >> ### Variable defination
->>> `A variable defination tells the compiler where and how much storage to create for the variable. A variable defiantion specifies a data type and contains a list of one or more variable of that type as follows-`
+>>> A variable defination tells the compiler where and how much storage to create for the variable. A variable defiantion specifies a data type and contains a list of one or more variable of that type as follows-
 >>>
 ```go
 var variable_list optional_data_type;
 ```
->>> `Here,` **optional_data_type** `is a valid Go data type including byte, int, float32, complex64, boolean or any user-defined object etc. and ` **variable_list** `may consist of one or more identifier names  separated by commas. Some valid declarations are shown here-`
+>>> Here, **optional_data_type** is a valid Go data type including byte, int, float32, complex64, boolean or any user-defined object etc. and  **variable_list** may consist of one or more identifier names  separated by commas. Some valid declarations are shown here-
 >>>
 ```go
 var x, y, z int;
@@ -218,17 +218,17 @@ var c, ch byte;
 var f, salary flat32;
 d = 15
 ```
->>> `The statement` "**var x, y, z int;**" `declares and defines the variable x, y and z; which instructs the compiler to create variables named x, y, and z of type int.`
+>>> The statement "**var x, y, z int;**" declares and defines the variable x, y and z; which instructs the compiler to create variables named x, y, and z of type int.
 >>>
->>> `Variables can be initialized (assigned an initial value) in their declaration. The type of variable is automatically judged by the compiler based on the value passed to it. The initializer consists of an equal sign followed by a constant expression as follows-`
+>>> Variables can be initialized (assigned an initial value) in their declaration. The type of variable is automatically judged by the compiler based on the value passed to it. The initializer consists of an equal sign followed by a constant expression as follows-
 >
 ```go
 variable_name = value;
 ```
 >> ### Static type declaration
->>> `A static type variable declaration provides assurance to the compiler that there is one variable available with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail of the variable. A varialbe declaration has its meaning at the time of compilation only, the compiler needs the actual variable declaration at the time of linking of the program.`
+>>> A static type variable declaration provides assurance to the compiler that there is one variable available with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail of the variable. A varialbe declaration has its meaning at the time of compilation only, the compiler needs the actual variable declaration at the time of linking of the program.
 >>>
->>> `Example-`
+>>> Example-
 >>>
 ```go
 package main
@@ -242,18 +242,18 @@ func main() {
     fmt.Printf("x is of type %T\n", x)
 }
 ```
->>> `When the above code is compiled and executed, it produces the following result-`
+>>> When the above code is compiled and executed, it produces the following result-
 ```
 20
 x is of type float64
 ```
 >
 >> ### Dynamic type declaration (type interfence)
->>> `A dynamic type variable declaration requires the compiler to interprete the type of the variable based on the value passed to it. The compiler does not reqiure a variable to have type statically as a necessary requirement.`
+>>> A dynamic type variable declaration requires the compiler to interprete the type of the variable based on the value passed to it. The compiler does not reqiure a variable to have type statically as a necessary requirement.
 >>>
->>> `Example-`
+>>> Example-
 >>>
->>> `Try the following example, where the variables have been declared without any type. Notice, in case of type interence, we initialized the variable` **y** `with` **:=** `operator, whereas` **x** `is initialized using` **=** `operator.`
+>>> Try the following example, where the variables have been declared without any type. Notice, in case of type interence, we initialized the variable **y** with **:=** operator, whereas **x** is initialized using **=** operator.
 ```go
 package main
 
@@ -268,7 +268,7 @@ func main() {
     fmt.Printf("y is of type %T\n", y)
 }
 ```
->>> `When the above code is compiled and executed, it produces the following result-`
+>>> When the above code is compiled and executed, it produces the following result-
 ```
 20
 15
@@ -277,9 +277,9 @@ y is of type int
 ```
 >
 >> ### Mixed variable declaration
->>> `Variables of different types can be declared in one go using type inference`
+>>> Variables of different types can be declared in one go using type inference
 >>>
->>> `Example-`
+>>> Example-
 >>>
 ```go
 package main
@@ -297,7 +297,7 @@ func main() {
     fmt.Printf("c is of type %T\n", c)
 }
 ```
->>> `When the above code is compiled and executed, it produces the following result-`
+>>> When the above code is compiled and executed, it produces the following result-
 >>>
 ```
 3
@@ -309,34 +309,34 @@ c is of type string
 ```
 >>
 >> ### The lvalues and the rvalues
->>> `There are two kind of expression in Go-`
+>>> There are two kind of expression in Go-
 >>>
 | Sr. No. | Expression |
 | :----:  | :----   |
 | 1 | **lvalue** - `Expressions that refer to a memory location is called` "lvalue" `expression. An lvalue may appear as either the left-hand or right-hand side of an assignment.` |
 | 2 | **rvalue** - `The term rvalue refers to a data value that is stored at some address in memory. An rvalue is an expression that cannot have a value assigned to it which means an rvalue may appear on the right, but not left-hand side of an assignment` |
->>> `The following statement is valid-`
+>>> The following statement is valid-
 ```
 x = 20.0
 ```
->>> `The following statement is not valid. It would generate compile-time error-`
+>>> The following statement is not valid. It would generate compile-time error-
 ```
 10 = 20
 ```
 
 ## Constants
-> `Constants refer to fixed values that the program may not alter during its execution. These fixed values are also called` **literals.**
+> Constants refer to fixed values that the program may not alter during its execution. These fixed values are also called **literals.**
 >
-> `Constants can be of any of the basic data types like an` _integer constant_ `, a` _character constant_ `, or a` _string literal_ `. There are also enumeration constants as well.`
+> Constants can be of any of the basic data types like an _integer constant_ , a _character constant_ , or a _string literal_ . There are also enumeration constants as well.
 >
-> `Constants are treated just like regular variables except that their values cannot be modified after their defination.`
+> Constants are treated just like regular variables except that their values cannot be modified after their defination.
 >
 > ### Integer literals
->> `An integer literals can be a decimal, octal, or hexadecimal constant. A prefix specifies the base or radix: 0x or 0X for hexadecimal, 0 for octal and nothing for decimal.`
+>> An integer literals can be a decimal, octal, or hexadecimal constant. A prefix specifies the base or radix: 0x or 0X for hexadecimal, 0 for octal and nothing for decimal.
 >>
->> `An integer literal can also have a suffix that is a combination of U and L, for undigned and long, respectively. The suffix can be uppercase or lowercase and can be in any order.`
+>> An integer literal can also have a suffix that is a combination of U and L, for undigned and long, respectively. The suffix can be uppercase or lowercase and can be in any order.
 >>
->> `Here are some example of integer literals-`
+>> Here are some example of integer literals-
 ```go
 212     /* Legal */
 215u    /* Legal */
@@ -345,7 +345,7 @@ x = 20.0
 032UU   /* Illegal: cannot repeat a suffix */
 ```
 >>
->> `Following are other example of various type of Integer literals-`
+>> Following are other example of various type of Integer literals-
 ```go
 85      /* decimal */
 0213    /* octal   */
@@ -357,11 +357,11 @@ x = 20.0
 ```
 >
 > ### Floating-point literals
->> `A floating point literals has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literal either in decimal form or exponential form.`
+>> A floating point literals has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literal either in decimal form or exponential form.
 >>
->> `While representing using decimal form, you must include the decimal point, the exponent, or both and while representing using exponential form, you must include the integer part, the fractional part, or both. The signed exponent is introduced by e or E`
+>> While representing using decimal form, you must include the decimal point, the exponent, or both and while representing using exponential form, you must include the integer part, the fractional part, or both. The signed exponent is introduced by e or E
 >>
->> `Here are some examples of floating-point literals-`
+>> Here are some examples of floating-point literals-
 ```go
 3.14159     /* Legal */
 314159E-5L  /* Legal */
@@ -371,7 +371,7 @@ x = 20.0
 ```
 >
 > ### Escape Sequence
->> `When certain characters are preceded by a backslash, they will jave a special meaning in Go. These are known as Escape Sequence codes which are used to represent newline (`**\n**`), tab (`**\t**`), backspace, etc. Here you have a list of some of such escape sequence codes-`
+>> When certain characters are preceded by a backslash, they will jave a special meaning in Go. These are known as Escape Sequence codes which are used to represent newline (**\n**), tab (**\t**), backspace, etc. Here you have a list of some of such escape sequence codes-
 >>
 | Escape Sequence | Meaning |
 | :-------------: | :-----: |
@@ -389,7 +389,7 @@ x = 20.0
 | \000 | Octal number of one to three digits |
 | \xhh... | Hexadecimal number of one or more digits |
 >>
->> `The following example show how to use` **\t** `in a program-`
+>> The following example show how to use **\t** in a program-
 >>
 ```go
 package main
@@ -400,18 +400,18 @@ func main() {
     fmt.Println("Hello, World!")
 }
 ```
->> `When the above code is compiled and executed, it produces the following result-`
+>> When the above code is compiled and executed, it produces the following result-
 >>
 ```
 Hello, World!
 ```
 >
 > ### String literals
->> `String literals or constants are enclosed in double quotes` **""** `. A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.`
+>> String literals or constants are enclosed in double quotes **""** . A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.
 >>
->> `You can break a long time into multiple lines using string literal and seprating them using whitespaces.`
+>> You can break a long time into multiple lines using string literal and seprating them using whitespaces.
 >>
->> `Here are some examples of string literals. All the three forms are identical springs.`
+>> Here are some examples of string literals. All the three forms are identical springs.
 >>
 ```
 "hello, world"
@@ -424,12 +424,12 @@ world"
 ```
 >
 > ### The _**const**_ keyword
->> `You can use` **const** `prefix to declare constants with a specific type as follows-`
+>> You can use **const** prefix to declare constants with a specific type as follows-
 >>
 ```
 const variable type = value
 ```
->> `The following example shows how to use the` **const** `keyword-`
+>> The following example shows how to use the **const** keyword-
 >>
 ```go
 package main
@@ -445,23 +445,23 @@ func main() {
     fmt.Println("value of area : %d", area)
 }
 ```
->> `When the above code is compiled and executed, it produces the following result-`
+>> When the above code is compiled and executed, it produces the following result-
 ```
 value of area : 50
 ```
->> `Note: It is a good programming practice to define constants in CAPITALS.`
+>> Note: It is a good programming practice to define constants in CAPITALS.
 
 ## Operators
-> `An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. Go language is rich in built-in operators and provides the following types of operators-`
->> * `Arithmetic Operators`
->> * `Relational Operators`
->> * `Logical Operators`
->> * `Bitwise Operators`
->> * `Assignment Operators`
->> * `Miscellaneous Operators`
+> An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. Go language is rich in built-in operators and provides the following types of operators-
+>> * Arithmetic Operators
+>> * Relational Operators
+>> * Logical Operators
+>> * Bitwise Operators
+>> * Assignment Operators
+>> * Miscellaneous Operators
 >>
 >> ### Arithmetic Operator
->> `Following table shows all the arithmetic operators supported by Go language.`
+>> Following table shows all the arithmetic operators supported by Go language.
 >>
 | Operator | Decription |
 | :------: | :--- |
@@ -474,7 +474,7 @@ value of area : 50
 | -- | Decrement operator. It decrease the integer value by one. |
 >>
 >> ### Relational Operators
->> `The following table shows all the relational operators support by Go language.`
+>> The following table shows all the relational operators support by Go language.
 >>
 | Operator | Description |
 | :------: | :---- |
@@ -486,7 +486,7 @@ value of area : 50
 | <= | It checks if the value of the left operand is less than or equal to the value of the right operand; if yes, the conditon becomes true. |
 >>
 >> ### Logical Operators
->> `The following table list all the logical operators supported by Go language.`
+>> The following table list all the logical operators supported by Go language.
 >>
 | Operator | Description | 
 | :------: | :---- |
@@ -495,7 +495,7 @@ value of area : 50
 | ! | Called Logical NOT operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false. |
 >>
 >> ### Bitwise Operators
->> `Bitwise operators work on bits and perform bit-by-bit operation. The truth tables for &, | and ^ are as follows-`
+>> Bitwise operators work on bits and perform bit-by-bit operation. The truth tables for &, | and ^ are as follows-
 >>
 |  p  |  q  | p & q | p / q | p ^ q |
 | :-: | :-: | :---: | :---: | :---: |
@@ -505,7 +505,7 @@ value of area : 50
 |  1  |  0  |   0   |   1   |   1   |
 >>
 >> ### Assignment Operators
->> `The following table lists all the assignment operators supported by Go language-`
+>> The following table lists all the assignment operators supported by Go language-
 >>
 | Operator | Description |
 | :------: | :----       |
@@ -522,7 +522,7 @@ value of area : 50
 | /= | Bitwise inclusive OR and assignment operator |
 >>
 >> ### Miscellaneous Operators
->> `There are a few other important operators supported by Go language including` **sizeof** `and ?:.`
+>> There are a few other important operators supported by Go language including **sizeof** and ?:.
 >>
 | Operator | Description |
 | :------: | :---- |
@@ -530,11 +530,11 @@ value of area : 50
 | * | Pointer to a variable. |
 >>
 >> ### Operators Precedence
->> `Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.`
+>> Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.
 >>
->> `For example: x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3 * 2 and then adds into 7.`
+>> For example: x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3 * 2 and then adds into 7.
 >>
->> `Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operatorss will be evaluated first.`
+>> Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operatorss will be evaluated first.
 >>
 | Category | Operator | Associativity |
 | :------: | :------: | :----: |
@@ -554,9 +554,9 @@ value of area : 50
 | Comma | , | Left to right |
 
 ## Decision Making
-> `Decision Making structures require that the programmer specify one or more condition to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be false.`
+> Decision Making structures require that the programmer specify one or more condition to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be false.
 >
-> `Go programming language provides the following types of descision making statements.`
+> Go programming language provides the following types of descision making statements.
 >
 | Sr. No. | Statement & Description |
 | :-----: | :----- |
@@ -567,11 +567,11 @@ value of area : 50
 | 5 | select statement - A **select** statement is similar to **switch** statement with difference that case statement refers to channel communications. |
 
 ## Loops
-> `Programming language provides various control structure that allow for more complicated execution paths`
+> Programming language provides various control structure that allow for more complicated execution paths
 > 
-> `A loop statement allows us to execute a statement or group of statements multiple times.`
+> A loop statement allows us to execute a statement or group of statements multiple times.
 >
-> `Go programming language privides the following types of loop to handle looping requirements.`
+> Go programming language privides the following types of loop to handle looping requirements.
 >
 | Sr. No. | Loop Type & Description |
 | :-----: | :----- |
@@ -579,9 +579,9 @@ value of area : 50
 | 2 | nested loop - These are one or multiple loops inside any of loop. |
 >
 >> ### Loop Control Statements
->> `Loop control statements change an execution from its normal sequence. When an execution leaves its scope, all automatic objects that were created in that scope are destroyed.`
+>> Loop control statements change an execution from its normal sequence. When an execution leaves its scope, all automatic objects that were created in that scope are destroyed.
 >> 
->> `Go supports the following control statements-`
+>> Go supports the following control statements-
 >>
 | Sr. No. | Control Statement & Description |
 | :-----: | :---- |
@@ -590,7 +590,7 @@ value of area : 50
 | 3 | goto statement - It transfers control to the labeled statement. |
 >
 >> ### The Infinite Loop
->> `A loop becomes an infinite loop if its condition never becomes false. The for loop is traditionally used for this purpose. Since none of the three expressions that form the for loop are required, you can make an endless loop by leaving the conditional expression empty or by passing true to it.`
+>> A loop becomes an infinite loop if its condition never becomes false. The for loop is traditionally used for this purpose. Since none of the three expressions that form the for loop are required, you can make an endless loop by leaving the conditional expression empty or by passing true to it.
 >>
 ```go
 package main
@@ -603,17 +603,17 @@ func main() {
     }
 }
 ```
-> **Note** `- You can terminate an infinite loop by pressing` **Ctrl + C** `keys.`
+> **Note** - You can terminate an infinite loop by pressing **Ctrl + C** keys.
 
 ## Functions
-> `A function is a group of statement that together perform a task. Every Go program has at least one function, which is` **main()** `. You can divide your code into separate functions. How you divide your code into separate functions. How you divide your code among different functions is up to you, but logically, the division should be such that each function performs a specific task.`
+> A function is a group of statement that together perform a task. Every Go program has at least one function, which is **main()** . You can divide your code into separate functions. How you divide your code into separate functions. How you divide your code among different functions is up to you, but logically, the division should be such that each function performs a specific task.
 >
-> `A function` **declaration** `tells the compiler about a function name, return type, and parameters. A function` **defination** `provides the actual body of the function.`
+> A function **declaration** tells the compiler about a function name, return type, and parameters. A function **defination** provides the actual body of the function.
 >
-> `Functions are also known as` **method, sub-routine** `or` **procedure.**
+> Functions are also known as **method, sub-routine** or **procedure.**
 >
 > ## Defining
->> `The general form of a function defination in Go programming language is as follows-`
+>> The general form of a function defination in Go programming language is as follows-
 >>
 ```go
 func function_name( [parameter list] ) [return_types]
