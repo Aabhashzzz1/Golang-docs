@@ -449,7 +449,7 @@ func main() {
 ```
 value of area : 50
 ```
->> Note: It is a good programming practice to define constants in CAPITALS.
+>> **Note**- It is a good programming practice to define constants in CAPITALS.
 
 ## Operators
 > An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. Go language is rich in built-in operators and provides the following types of operators-
