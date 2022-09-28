@@ -323,3 +323,307 @@ x = 20.0
 ```
 10 = 20
 ```
+
+## Constants
+> `Constants refer to fixed values that the program may not alter during its execution. These fixed values are also called` **literals.**
+>
+> `Constants can be of any of the basic data types like an` _integer constant_ `, a` _character constant_ `, or a` _string literal_ `. There are also enumeration constants as well.`
+>
+> `Constants are treated just like regular variables except that their values cannot be modified after their defination.`
+>
+> ### Integer literals
+>> `An integer literals can be a decimal, octal, or hexadecimal constant. A prefix specifies the base or radix: 0x or 0X for hexadecimal, 0 for octal and nothing for decimal.`
+>>
+>> `An integer literal can also have a suffix that is a combination of U and L, for undigned and long, respectively. The suffix can be uppercase or lowercase and can be in any order.`
+>>
+>> `Here are some example of integer literals-`
+```go
+212     /* Legal */
+215u    /* Legal */
+0xFeeL  /* Legal */
+078     /* Illegal: 8 is not an octal digit */
+032UU   /* Illegal: cannot repeat a suffix */
+```
+>>
+>> `Following are other example of various type of Integer literals-`
+```go
+85      /* decimal */
+0213    /* octal   */
+0x4b    /* hexadecimal */
+30      /* int  */
+30u     /* unsigned int */
+30l     /* long */
+30ul    /* unsigned long */
+```
+>
+> ### Floating-point literals
+>> `A floating point literals has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literal either in decimal form or exponential form.`
+>>
+>> `While representing using decimal form, you must include the decimal point, the exponent, or both and while representing using exponential form, you must include the integer part, the fractional part, or both. The signed exponent is introduced by e or E`
+>>
+>> `Here are some examples of floating-point literals-`
+```go
+3.14159     /* Legal */
+314159E-5L  /* Legal */
+510E        /* Illegal: incomplete exponeny */
+210f        /* Illegal: no decimal or exponent */
+.e55        /* Illegal: missing integer or fraction */
+```
+>
+> ### Escape Sequence
+>> `When certain characters are preceded by a backslash, they will jave a special meaning in Go. These are known as Escape Sequence codes which are used to represent newline (`**\n**`), tab (`**\t**`), backspace, etc. Here you have a list of some of such escape sequence codes-`
+>>
+| Escape Sequence | Meaning |
+| :-------------: | :-----: |
+| \\ | \character |
+| \' | 'character |
+| \" | "character |
+| \? | ?character |
+| \a | Alert or bell |
+| \b | Backspace |
+| \f | Form feed |
+| \n | Newline |
+| \r | Carriage return |
+| \t | Horizontal tab |
+| \v | Vertical tab |
+| \000 | Octal number of one to three digits |
+| \xhh... | Hexadecimal number of one or more digits |
+>>
+>> `The following example show how to use` **\t** `in a program-`
+>>
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+>> `When the above code is compiled and executed, it produces the following result-`
+>>
+```
+Hello, World!
+```
+>
+> ### String literals
+>> `String literals or constants are enclosed in double quotes` **""** `. A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.`
+>>
+>> `You can break a long time into multiple lines using string literal and seprating them using whitespaces.`
+>>
+>> `Here are some examples of string literals. All the three forms are identical springs.`
+>>
+```
+"hello, world"
+
+"hello, \
+
+world"
+
+"hello, "   "w" "orld"
+```
+>
+> ### The _**const**_ keyword
+>> `You can use` **const** `prefix to declare constants with a specific type as follows-`
+>>
+```
+const variable type = value
+```
+>> `The following example shows how to use the` **const** `keyword-`
+>>
+```go
+package main
+
+import "fmt"
+
+func main() {
+    const LENGTH int = 10
+    const WIDTH int = 5
+    var area int
+
+    area = LENGTH * WIDTH
+    fmt.Println("value of area : %d", area)
+}
+```
+>> `When the above code is compiled and executed, it produces the following result-`
+```
+value of area : 50
+```
+>> `Note: It is a good programming practice to define constants in CAPITALS.`
+
+## Operators
+> `An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. Go language is rich in built-in operators and provides the following types of operators-`
+>> * `Arithmetic Operators`
+>> * `Relational Operators`
+>> * `Logical Operators`
+>> * `Bitwise Operators`
+>> * `Assignment Operators`
+>> * `Miscellaneous Operators`
+>>
+>> ### Arithmetic Operator
+>> `Following table shows all the arithmetic operators supported by Go language.`
+>>
+| Operator | Decription |
+| :------: | :--- |
+| + | Adds two operands |
+| - | Substracts second operands from the first |
+| * | Multiplies both operands |
+| / | Divides the numberator by the denominator |
+| % | Modules operator, gives the remainder after an integer division. |
+| ++ | Increment operator. It increase the integer value by one. |
+| -- | Decrement operator. It decrease the integer value by one. |
+>>
+>> ### Relational Operators
+>> `The following table shows all the relational operators support by Go language.`
+>>
+| Operator | Description |
+| :------: | :---- |
+| == | It checks if the values of the operands are equal or not; if yes, the condition becomes true. |
+| != | It checks if the values of two operands are equal or not; if the values are not equal, then the condition becomes true. |
+| > | It checks if the value of left operands is greater than the value of right operand; if yes, the condition becomes true. |
+| < | It checks if the value of left operand is less than the value of the right operand; if yes, the condition becomes true. |
+| >= | It checks if the value of the left operand is greater than or equal to the value of the right operand; if yes, the condition becomes true |
+| <= | It checks if the value of the left operand is less than or equal to the value of the right operand; if yes, the conditon becomes true. |
+>>
+>> ### Logical Operators
+>> `The following table list all the logical operators supported by Go language.`
+>>
+| Operator | Description | 
+| :------: | :---- |
+| && | Called Logical AND operator. If both the operands are non-zero, then condition beacuse true. |
+| // | Called Logical OR operator. If any of the two operands is non-zero, then condition becomes true. |
+| ! | Called Logical NOT operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false. |
+>>
+>> ### Bitwise Operators
+>> `Bitwise operators work on bits and perform bit-by-bit operation. The truth tables for &, | and ^ are as follows-`
+>>
+|  p  |  q  | p & q | p / q | p ^ q |
+| :-: | :-: | :---: | :---: | :---: |
+|  0  |  0  |   0   |   0   |   0   |
+|  0  |  1  |   0   |   1   |   1   |
+|  1  |  1  |   1   |   1   |   0   |
+|  1  |  0  |   0   |   1   |   1   |
+>>
+>> ### Assignment Operators
+>> `The following table lists all the assignment operators supported by Go language-`
+>>
+| Operator | Description |
+| :------: | :----       |
+| = | Simple assignment operator. Assigns values from right side operands to left side operand |
+| += | Add AND assignment operator, it adds right operand to the left operand and assign the result to left operand |
+| -= | Substract AND assignment operator, it substracts right operand from the left operand and assign the result to left operand |
+| *= | Multiply AND assignment operator, it multiples right operand with the left operand and assign the result to the left operand | 
+| /= | Divide AND assignment operator, it divides left operand with the right operand and assign the result to the left operand |
+| %= | Modulus AND assignment operator, it takes modulus using two operands and assign the result to left operand |
+| <<= | Left-shift AND assignment operator |
+| >>= | Right-shift AND assignment operator |
+| &= | Bitwise AND assignment operator | 
+| ^= | Bitwise exclusive OR and assignment operator |
+| /= | Bitwise inclusive OR and assignment operator |
+>>
+>> ### Miscellaneous Operators
+>> `There are a few other important operators supported by Go language including` **sizeof** `and ?:.`
+>>
+| Operator | Description |
+| :------: | :---- |
+| & | Returns the address of a varible. |
+| * | Pointer to a variable. |
+>>
+>> ### Operators Precedence
+>> `Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.`
+>>
+>> `For example: x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3 * 2 and then adds into 7.`
+>>
+>> `Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operatorss will be evaluated first.`
+>>
+| Category | Operator | Associativity |
+| :------: | :------: | :----: |
+| Postfix | () [] -> . ++ -- | Left to right |
+| Unary | + - ! ~ ++ -- (type)* & sizeof | Right to left |
+| Multiplicative | * / % | Left to right |
+| Additive | + - | Left to right |
+| Shift | << >> | Left to right |
+| Relation | < <= > >= | Left to right |
+| Equality | == != | Left to right |
+| Bitwise AND | & | Left to right |
+| Bitwise XOR | ^ | Left to right |
+| Bitwise OR | / | Left to right |
+| Logical AND | && | Left to right |
+| Logical OR | // | Left to right |
+| Assignment | = += -= *= /= %= >>= <<== &= ^= /= | Right to left |
+| Comma | , | Left to right |
+
+## Decision Making
+> `Decision Making structures require that the programmer specify one or more condition to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be false.`
+>
+> `Go programming language provides the following types of descision making statements.`
+>
+| Sr. No. | Statement & Description |
+| :-----: | :----- |
+| 1 | if statement - An **if statement** consists of a boolean expression followed by one or more statement |
+| 2 | if...else statement - An **if statement** can be followed by an optional **else statement**, which executes when the boolean expression is false. |
+| 3 | nested if statement - You can use one **if** or **else if** statement inside another **if** or **else if** statement(s).
+| 4 | switch statement - A **switch** statement allows a variable to be tested for equality against a list of values. |
+| 5 | select statement - A **select** statement is similar to **switch** statement with difference that case statement refers to channel communications. |
+
+## Loops
+> `Programming language provides various control structure that allow for more complicated execution paths`
+> 
+> `A loop statement allows us to execute a statement or group of statements multiple times.`
+>
+> `Go programming language privides the following types of loop to handle looping requirements.`
+>
+| Sr. No. | Loop Type & Description |
+| :-----: | :----- |
+| 1 | for loop - It executes a squence of statment multiple times and abbreviates the code that manages the loop varable. |
+| 2 | nested loop - These are one or multiple loops inside any of loop. |
+>
+>> ### Loop Control Statements
+>> `Loop control statements change an execution from its normal sequence. When an execution leaves its scope, all automatic objects that were created in that scope are destroyed.`
+>> 
+>> `Go supports the following control statements-`
+>>
+| Sr. No. | Control Statement & Description |
+| :-----: | :---- |
+| 1 | break statement - It terminates a **for loop** or **switch** statement and transfers execution to the statement immediately following this for loop or switch. |
+| 2 | continue statement - It causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating. |
+| 3 | goto statement - It transfers control to the labeled statement. |
+>
+>> ### The Infinite Loop
+>> `A loop becomes an infinite loop if its condition never becomes false. The for loop is traditionally used for this purpose. Since none of the three expressions that form the for loop are required, you can make an endless loop by leaving the conditional expression empty or by passing true to it.`
+>>
+```go
+package main
+
+import "fmt"
+
+func main() {
+    for true {
+        fmt.Printf("This loop will run forever. \n")
+    }
+}
+```
+> **Note** `- You can terminate an infinite loop by pressing` **Ctrl + C** `keys.`
+
+## Functions
+> `A function is a group of statement that together perform a task. Every Go program has at least one function, which is` **main()** `. You can divide your code into separate functions. How you divide your code into separate functions. How you divide your code among different functions is up to you, but logically, the division should be such that each function performs a specific task.`
+>
+> `A function` **declaration** `tells the compiler about a function name, return type, and parameters. A function` **defination** `provides the actual body of the function.`
+>
+> `Functions are also known as` **method, sub-routine** `or` **procedure.**
+>
+> ## Defining
+>> `The general form of a function defination in Go programming language is as follows-`
+>>
+```go
+func function_name( [parameter list] ) [return_types]
+{
+    //body of the function
+}
+```
+>>
+
+
+
+
+
