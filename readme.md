@@ -24,7 +24,7 @@ Other features-
 
 ## Go program extension
 
-> `It should be written into one or more test files with the extension` **.go**
+> It should be written into one or more test files with the extension **`.go`**
 >
 > `For example-` __hello.go__
 
