@@ -26,20 +26,20 @@ Other features-
 
 > It should be written into one or more test files with the extension **`.go`**
 >
-> `For example-` __hello.go__
+> For example- `hello.go`
 
 ## Program Structure
 
-> `A go program basically consits of the following parts-`
->> * `Package declaration`
->> * `Import packages`
->> * `Functions`
->> * `Variables`
->> * `Statements and Expressions`
->> * `Comments`
+> A go program basically consits of the following parts-
+>> * Package declaration
+>> * Import packages
+>> * Functions
+>> * Variables
+>> * Statements and Expressions
+>> * Comments
 
 
-> `Let us look simple code that would print the words "Hello World"-`
+> Let us look simple code that would print the words "Hello World"-
 ```go
 package main
 
@@ -50,13 +50,13 @@ func main() {
 }
 ```
 
-> `Let us take at the various parts of the above program-`
->> * `The line of the program package main defines the packages name in which this program should lie. It is a mandatory statement, as Go programs run in packages. The main package is the starting point to run the program. Each package has a path and name associated with it`
->> * `The next line import "fmt" is a proprocessor command which tells the Go compiler to include the files lying in the package fmt.`
->> * `The next line func main() is the main function where the program execution begins.` 
->> * `The next line /*...*/ is ignored by the compiler and it is there to add comments in the program. Comments are also represented using // similar to Java, Javascript or C++ comments`
->> * `The next line fmt.Println(...) is another function available in Go which causes the message "Hello, World!" to be displayed on the screen. Here fmt package has exported Println mathod which is used to display the message on the screen` 
->> * `Notice: The capital P of Println method. In Go language, a name is exported if it starts with capital letter. Exported means the function or variable/constant is accessible to the importer of the respective package.`
+> Let us take at the various parts of the above program-
+>> * The line of the program package main defines the packages name in which this program should lie. It is a mandatory statement, as Go programs run in packages. The main package is the starting point to run the program. Each package has a path and name associated with it
+>> * The next line import "fmt" is a proprocessor command which tells the Go compiler to include the files lying in the package fmt.
+>> * The next line func main() is the main function where the program execution begins.
+>> * The next line /*...*/ is ignored by the compiler and it is there to add comments in the program. Comments are also represented using // similar to Java, Javascript or C++ comments
+>> * The next line fmt.Println(...) is another function available in Go which causes the message "Hello, World!" to be displayed on the screen. Here fmt package has exported Println mathod which is used to display the message on the screen
+>> * Notice: The capital P of Println method. In Go language, a name is exported if it starts with capital letter. Exported means the function or variable/constant is accessible to the importer of the respective package.
 
 ## Executing a program
 > `Let us discuss how to save the source code in a file, compile it and finally execute the program. Please follow the steps given below-`
